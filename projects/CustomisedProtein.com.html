@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Raman</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <link href="/css/style.css" rel="stylesheet">
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    </head>
+
+    <body>
+        <header>
+            <!-- place navbar here -->
+        </header>
+        <main class="d-flex justify-content-center mx-2">
+             <div style="max-width: 900px; width:100vw">
+                <!-- <h1 class="text-center mt-5 ">Hi! I am Raman</h1> -->
+                 <div class="mt-5 ps-2">
+                     <nav aria-label="breadcrumb ">
+                       <ol class="breadcrumb">
+                         <li class="breadcrumb-item "><a href="/">home</a></li>
+                         <li class="breadcrumb-item "><a href="/projects">projects</a></li>
+                         <li class="breadcrumb-item active" aria-current="page">customisedprotein</li>
+                       </ol>
+                     </nav>
+                 </div>
+                <h5 class="text-center mt-2 text-white">Customised Protein</h3>
+    
+                 <!-- Projects -->
+                <div class="container my-4">
+                    <div class="p-4 bg-glass-dark my-4 d-flex justify-content-end gap-3 ">
+                      <a href="/" class="bi bi-display text-secondary hover-text-white"> Preview</a>
+                      <a href="/" class="bi bi-code-slash text-secondary hover-text-white"> Code</a>
+                    </div>
+                    <div class="custom_carousal d-flex justify-content-between ">
+                        <button class="carousel-btn carousel-btn-left d-none d-md-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="visually-hidden">Previous</span>
+                          <span class="bi bi-chevron-left text-white fs-2" aria-hidden="true"></span>
+                        </button>
+                        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner rounded-4  ">
+                              <div class="carousel-item active">
+                                <img src="/img/projects/cls.jpg" height="400px" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="/img/projects/cp.jpg" height="400px"  class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="/img/projects/horg.jpg" height="400px" class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                        </div>
+                        <button class="carousel-btn-right carousel-btn d-none d-md-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="bi bi-chevron-right text-white fs-2" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <!--Project Overview -->
+                    <div class="p-4 bg-glass-dark my-4 gap-3 ">
+                      <h5 class="text-secondary">Project Overview</h5>
+                      <div class="">
+                        <p>CustomisedProtein.com is an e-commerce platform that allows users to personalize their protein supplements based on their fitness goals, dietary restrictions, and taste preferences. The platform offers a seamless product customization experience, from choosing ingredients to configuring protein blends, all the way to a secure and smooth checkout process.</p>
+                      </div>
+                    </div>
+                    <!-- Technologies -->
+                    <div class="p-4 bg-glass-dark my-4 gap-3 ">
+                      <h5 class="text-secondary">Technologies Used</h5>
+                      <div>
+                        <table class="table table-borderless">
+                          <tbody>
+                            <tr>
+                              <th scope="row">Backend Development:</th>
+                              <td>Python, Django, MySQL</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Frontend Development:</th>
+                              <td>HTML, Bootstrap5, CSS, JavaScript</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Cloud & Deployment:</th>
+                              <td>EC2, S3, NGINX, Gunicorn</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Design & Tools:</th>
+                              <td> Figma (for design), Git (version control)</td>
+                            </tr>
+
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <!--Key Features-->
+                    <div class="p-4 bg-glass-dark my-4 gap-3 ">
+                      <h5 class="text-secondary">Key Features</h5>
+                      <div class="mt-3">
+                        <p><b>Customizable Protein Blends:</b> Users can create their own protein supplements by selecting ingredients based on their preferences and goals.</p>
+                        <p><b>Secure Payment Gateway:</b> Integrated with Razorpay API for seamless and secure payment transactions.</p>
+                        <p><b>Product Recommendations:</b> The platform suggests protein blends based on user data and preferences to simplify decision-making.</p>
+                        <p><b>Responsive Design:</b> The website is optimized for all devices, ensuring a smooth experience across mobile, tablet, and desktop.</p>
+                        <p><b>User-Friendly Checkout:</b> Simplified checkout process with multiple payment options and fast order confirmation.</p>
+                      </div>
+                    </div>
+
+                   <!--Challenges & Solutions-->
+                    <div class="p-4 bg-glass-dark my-4 gap-3 ">
+                      <h5 class="text-secondary">Challenges & Solutions</h5>
+                      <div class="mt-3">
+                        <p><b>Challenge 1: Customization Complexity</b></p>
+                        <p>Allowing users to customize their protein blends while maintaining an intuitive user experience was a complex task.</p>
+                        <p><b>Solution:</b> We implemented a dynamic form system that guided users through the process step by step, making the customization process simple and enjoyable.</p>
+
+                        <p><b>Challenge 2: Secure Payment Handling</b></p>
+                        <p>Ensuring a secure checkout process for customers while handling payments efficiently.</p>
+                        <p><b>Solution:</b> Razorpay API was integrated to provide secure payment gateways, ensuring encryption of sensitive data and real-time transaction verification.</p>
+
+                        <p><b>Challenge 3: Responsive User Interface</b></p>
+                        <p>Ensuring the platform functioned smoothly on mobile and desktop devices.</p>
+                        <p><b>Solution:</b> Bootstrap5 was used to implement a fully responsive layout, ensuring a consistent experience across devices.</p>
+                      </div>
+                    </div>
+
+                  <!--Outcome-->
+                  <div class="p-4 bg-glass-dark my-4 gap-3 ">
+                    <h5 class="text-secondary">Outcome</h5>
+                    <div class="mt-3">
+                      <p>The Customised Protein platform successfully launched, offering users an easy and intuitive way to create personalized protein blends. The integration of secure payments, responsive design, and efficient product customization led to a positive reception from users. The platform saw high user engagement and repeat customers due to the smooth checkout and personalized product experience.</p>
+                    </div>
+                  </div>
+
+
+                    <!--Roles & Responsibilities-->
+                    <div class="p-4 bg-glass-dark my-4 gap-3 ">
+                      <h5 class="text-secondary">Roles & Responsibilities</h5>
+                      <div class="mt-3">
+                        <ul>
+                          <li>Developed the backend using Python and Django to handle product customization logic, order processing, and user accounts.</li>
+                          <li>Integrated third-party APIs such as payment gateways for smooth and secure checkout transactions.</li>
+                          <li>Collaborated with designers to create a user-friendly and responsive front-end using Bootstrap5, HTML, and CSS.</li>
+                          <li>Managed the deployment of the platform on AWS EC2 and integrated AWS S3 for storing product images and user-generated content.</li>
+                          <li>Implemented an optimized checkout process and user registration system to enhance the shopping experience.</li>
+                          <li>Handled version control using Git and worked with the team through GitHub for continuous integration and updates.</li>
+                        </ul>
+                      </div>
+                    </div>
+
+
+                    
+                    <!--Deployment & Hosting-->
+                    <div class="p-4 bg-glass-dark my-4 gap-3 ">
+                      <h5 class="text-secondary">Deployment & Hosting</h5>
+                      <div class="mt-3">
+                        <p><b>Godaddy's VPS:</b> Hosted the application on AWS EC2 instances for reliable and scalable performance.</p>
+                        <p><b>NGINX & Gunicorn:</b> Deployed the project using NGINX as a reverse proxy and Gunicorn for managing server requests efficiently.</p>
+                      </div>
+                    </div>
+                    <!--Links-->
+                    <div class="p-4 bg-glass-dark my-4 gap-3 ">
+                      <h5 class="text-secondary">Links</h5>
+                      <div class="mt-3">
+                        <p><b>Live Website:</b> <a href="http://www.thegourmetfest.com" target="_blank">customisedprotein</a></p>
+                        <p><b>GitHub Repository:</b> [GitHub Link, if available]</p>
+                      </div>
+                    </div>
+
+
+
+
+
+                    <div class="bg-glass-dark p-4 w-100 d-flex justify-content-center mt-4 text-center">
+                        <div class="linkWrap">
+                            <a href="./raman_9999222062_backend_developer.pdf" class="style-4">
+                              <span class="text-white fs-6">Download Resume</span>
+                              <svg viewBox="0 0 13 20" ><polyline  points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                                        <!--Outcome-->
+                    <div class="p-4 bg-glass-dark my-4 gap-3 ">
+                      <h5 class="text-secondary">Outcome</h5>
+                      <div class="mt-3">
+                        <p>The Customised Protein platform successfully launched, offering users an easy and intuitive way to create personalized protein blends. The integration of secure payments, responsive design, and efficient product customization led to a positive reception from users. The platform saw high user engagement and repeat customers due to the smooth checkout and personalized product experience.</p>
+                      </div>
+                    </div>
+
+                    
+    
+                </div>  
+    
+    
+             </div>
+        </main>
+      <!-- for adding extra margin on desktop-->
+      <div class="d-none d-md-block">
+        <p class="mt-5"></p>
+    </div>
+        <footer class="fixed d-block d-md-flex gap-5 fs-6 justify-content-center  p-5 ">
+            <div class="text-smoke bi-envelope-at text-center"> raman9514@gmail.com</div>
+            <div class="text-smoke bi-telephone text-center">+91 9999222062</div>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+      
+    </body>
+</html>

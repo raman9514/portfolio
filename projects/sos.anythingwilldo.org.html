@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Raman</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <link href="/css/style.css" rel="stylesheet">
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    </head>
+
+    <body>
+        <header>
+            <!-- place navbar here -->
+        </header>
+        <main class="d-flex justify-content-center mx-2">
+             <div style="max-width: 900px; width:100vw">
+                <!-- <h1 class="text-center mt-5 ">Hi! I am Raman</h1> -->
+                 <div class="mt-5 ps-2">
+                     <nav aria-label="breadcrumb ">
+                       <ol class="breadcrumb">
+                         <li class="breadcrumb-item "><a href="/">home</a></li>
+                         <li class="breadcrumb-item "><a href="/projects">projects</a></li>
+                         <li class="breadcrumb-item active" aria-current="page">sos.anythingwilldo.org</li>
+                       </ol>
+                     </nav>
+                 </div>
+                <h5 class="text-center mt-2 text-white">Crowdfunding</h3>
+    
+                 <!-- Projects -->
+                <div class="container my-4">
+                    <div class="p-4 bg-glass-dark my-4 d-flex justify-content-end gap-3 ">
+                      <a href="/" class="bi bi-display text-secondary hover-text-white"> Preview</a>
+                      <a href="/" class="bi bi-code-slash text-secondary hover-text-white"> Code</a>
+                    </div>
+                    <div class="custom_carousal d-flex justify-content-between ">
+                        <button class="carousel-btn carousel-btn-left d-none d-md-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="visually-hidden">Previous</span>
+                          <span class="bi bi-chevron-left text-white fs-2" aria-hidden="true"></span>
+                        </button>
+                        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner rounded-4  ">
+                              <div class="carousel-item active">
+                                <img src="/img/projects/cls.jpg" height="400px" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="/img/projects/cp.jpg" height="400px"  class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="/img/projects/horg.jpg" height="400px" class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                        </div>
+                        <button class="carousel-btn-right carousel-btn d-none d-md-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="bi bi-chevron-right text-white fs-2" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <!--Project Overview -->
+                    <div class="p-4 bg-glass-dark my-4 gap-3 ">
+                      <h5 class="text-secondary">Project Overview</h5>
+                      <div class="">
+                        <p>The SOS Crowdfunding platform allows users to raise campaigns specifically for educational purposes. It offers a user-friendly interface where donors can easily contribute to campaigns, and students can raise funds for their education. The platform also ensures transparency and security in handling donations, and provides certificates of appreciation to donors.</p>
+                      </div>
+                    </div>
+                    <!-- Technologies -->
+                    <div class="p-4 bg-glass-dark my-4 gap-3 ">
+                      <h5 class="text-secondary">Technologies Used</h5>
+                      <div>
+                        <table class="table table-borderless">
+                          <tbody>
+                            <tr>
+                              <th scope="row">Backend Development:</th>
+                              <td>Python, Django, MySQL</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Frontend Development:</th>
+                              <td>HTML, Bootstrap5, CSS, JavaScript</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Cloud & Deployment:</th>
+                              <td>EC2, S3, NGINX, Gunicorn</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Design & Tools:</th>
+                              <td> Figma (for design), Git (version control)</td>
+                            </tr>
+
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <!--Key Features-->
+                    <div class="p-4 bg-glass-dark my-4 gap-3 ">
+                      <h5 class="text-secondary">Key Features</h5>
+                      <div class="mt-3">
+                        <p><b>Campaign Creation:</b> Users can create campaigns for educational purposes and set fundraising goals.</p>
+                        <p><b>Donor Support:</b> Donors can contribute to campaigns and receive certificates of appreciation via email.</p>
+                        <p><b>Secure Payments:</b> Integrated Razorpay API for secure and smooth payment processing.</p>
+                        <p><b>Admin Dashboard:</b> A backend dashboard to monitor campaigns, donations, and overall platform performance.</p>
+                        <p><b>Responsive Design:</b> Ensured a seamless experience across various devices, including mobile, tablet, and desktop.</p>
+                        <p><b>Secure Login:</b> Implemented secure login systems to protect user data and ensure platform integrity.</p>
+                      </div>
+                    </div>
+
+                    <!--Challenges & Solutions-->
+                    <div class="p-4 bg-glass-dark my-4 gap-3 ">
+                      <h5 class="text-secondary">Challenges & Solutions</h5>
+                      <div class="mt-3">
+                        <p><b>Challenge 1: Ensuring Secure Payments</b></p>
+                        <p>Handling payment transactions securely was crucial to build trust with users and donors.</p>
+                        <p><b>Solution:</b> We integrated Razorpay API, ensuring secure, encrypted transactions with real-time verification.</p>
+                        
+                        <p><b>Challenge 2: Optimizing for High Traffic</b></p>
+                        <p>Ensuring that the platform could handle a large number of campaigns and donations at peak times was a challenge.</p>
+                        <p><b>Solution:</b> We used AWS EC2 and optimized the database to ensure the platform could handle high traffic seamlessly.</p>
+                        
+                        <p><b>Challenge 3: User Experience Across Devices</b></p>
+                        <p>Ensuring that both campaign creators and donors could have a smooth experience on all devices was essential.</p>
+                        <p><b>Solution:</b> We implemented responsive design techniques using Bootstrap5 to optimize the user interface for different devices.</p>
+                      </div>
+                    </div>
+
+                    <!--Learning Outcomes-->
+                    <div class="p-4 bg-glass-dark my-4 gap-3 ">
+                      <h5 class="text-secondary">Learning Outcomes</h5>
+                      <div class="mt-3">
+                        <p><b>API Integration:</b> Gained experience in integrating third-party APIs for authentication and email notifications.</p>
+                        <p><b>AWS Hosting:</b> Learned to optimize and deploy applications using AWS services like EC2 and S3.</p>
+                        <p><b>Production Deployment:</b> Enhanced skills in deploying Django applications with NGINX and Gunicorn for production environments.</p>
+                      </div>
+                    </div>
+                    <!--Roles & Responsibilities-->
+                    <div class="p-4 bg-glass-dark my-4 gap-3 ">
+                      <h5 class="text-secondary">Roles & Responsibilities</h5>
+                      <div class="mt-3">
+                        <ul>
+                          <li>Developed the platform's backend using Python and Django, handling user registration, donation tracking, and campaign creation.</li>
+                          <li>Designed and implemented a secure payment gateway using Razorpay API to facilitate seamless transactions.</li>
+                          <li>Handled cloud deployment on AWS EC2 and integrated S3 for storing media assets such as campaign images and videos.</li>
+                          <li>Collaborated with front-end developers to create a responsive and user-friendly interface using HTML, CSS, Bootstrap5, and JavaScript.</li>
+                          <li>Managed database using MySQL for user data, campaign details, and transaction records.</li>
+                          <li>Maintained version control using Git and collaborated with the team on GitHub.</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    
+                    <!--Deployment & Hosting-->
+                    <div class="p-4 bg-glass-dark my-4 gap-3 ">
+                      <h5 class="text-secondary">Deployment & Hosting</h5>
+                      <div class="mt-3">
+                        <p><b>AWS EC2:</b> Hosted the application on AWS EC2 instances for reliable and scalable performance.</p>
+                        <p><b>S3 Storage:</b> Utilized AWS S3 for storing static files and media, ensuring fast delivery to users.</p>
+                        <p><b>NGINX & Gunicorn:</b> Deployed the project using NGINX as a reverse proxy and Gunicorn for managing server requests efficiently.</p>
+                      </div>
+                    </div>
+                    <!--Links-->
+                    <div class="p-4 bg-glass-dark my-4 gap-3 ">
+                      <h5 class="text-secondary">Links</h5>
+                      <div class="mt-3">
+                        <p><b>Live Website:</b> <a href="http://www.thegourmetfest.com" target="_blank">Crowdfunding</a></p>
+                        <p><b>GitHub Repository:</b> [GitHub Link, if available]</p>
+                      </div>
+                    </div>
+
+
+
+
+
+                    <div class="bg-glass-dark p-4 w-100 d-flex justify-content-center mt-4 text-center">
+                        <div class="linkWrap">
+                            <a href="./raman_9999222062_backend_developer.pdf" class="style-4">
+                              <span class="text-white fs-6">Download Resume</span>
+                              <svg viewBox="0 0 13 20" ><polyline  points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    
+    
+                </div>  
+    
+    
+             </div>
+        </main>
+      <!-- for adding extra margin on desktop-->
+      <div class="d-none d-md-block">
+        <p class="mt-5"></p>
+    </div>
+        <footer class="fixed d-block d-md-flex gap-5 fs-6 justify-content-center  p-5 ">
+            <div class="text-smoke bi-envelope-at text-center"> raman9514@gmail.com</div>
+            <div class="text-smoke bi-telephone text-center">+91 9999222062</div>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+      
+    </body>
+</html>

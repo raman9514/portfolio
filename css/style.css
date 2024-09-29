@@ -35,6 +35,20 @@ body {
   color: #CCCCCC !important;
 }
 
+a {
+  text-decoration: none !important;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.hover-text-white:hover {
+  color: white !important;
+
+}
+
 .bg-glass-dark {
   /* From https://css.glass */
   /* From https://css.glass */
@@ -58,9 +72,17 @@ body {
 
   #about-me {
     font-size: 1rem !important;
+    line-height: 1.5rem !important;
+    /* text-justify: unset !important; */
   }
+
 }
 
+#about-me {
+  font-size: 1rem !important;
+  line-height: 1.5rem !important;
+  /* text-justify: unset !important; */
+}
 
 .bg-glass-light {
   /* From https://css.glass */
@@ -390,18 +412,62 @@ u {
 .about-section {}
 
 .breadcrumb {
-  --bs-breadcrumb-divider-color: rgb(255, 255, 255) !important;
+  --bs-breadcrumb-divider-color: #6c757d !important;
 }
 
 .breadcrumb .breadcrumb-item a {
-  color: #ffffff !important;
+  color: #6c757d !important;
   text-decoration: none;
 }
 
 .breadcrumb .breadcrumb-item::before {
-  color: white;
+  color: #6c757d;
 }
 
 .breadcrumb .active {
-  color: whitesmoke !important;
+  color: #94a2ae !important;
 }
+
+/* .profile-photo {
+  background-image: url(../img/raman_pic_2.jpg);
+  height: 200px;
+  background-position: center top;
+  background-size: 100%;
+}
+
+@media (max-width: 767px) {
+  .profile-photo {
+    background-image: url(../img/pic2.png);
+    height: 200px;
+    
+    margin: auto;
+    background-position: left top;
+    background-size: 100%;
+  }
+} */
+@media (max-width: 767px) {
+  .profile-div .bi {
+    font-size: 30px !important;
+  }
+
+  /* .profile-div .btn {
+    font-size: 20px;
+  } */
+
+
+}
+
+
+/**********************CARESOL****************************/
+
+.carousel-btn {
+  background: transparent;
+  border: none;
+
+}
+
+.carousel-btn .carousel-control-prev-icon {
+  color: #94a2ae;
+}
+
+/**********************CARESOL END****************************/
