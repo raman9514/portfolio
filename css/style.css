@@ -84,6 +84,11 @@ a {
   /* text-justify: unset !important; */
 }
 
+#about-me u {
+  color: white;
+  font-weight: 500 !important;
+}
+
 .bg-glass-light {
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.2);
@@ -380,18 +385,25 @@ td {
   color: white !important;
 }
 
-.project-table th {
-  width: 25px !important;
+.projects_list {
+  padding-left: 0px;
 }
 
-.project-table .lnks {
-  text-align: right;
+.projects_list li {
+  padding: 10px 10px;
+  list-style-position: inside;
+  border-bottom: 1px solid white;
 }
 
-.project-table .lnks a {
-  color: white;
+.projects_list a {
+  color: whitesmoke;
   margin-left: 20px !important;
 }
+
+.projects_list li a:hover {
+  color: white !important;
+}
+
 
 .lnk {
   width: 40px !important;
