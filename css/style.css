@@ -81,6 +81,11 @@ a {
   font-weight: 500 !important;
 }
 
+#about-me:hover u{
+  transition: all .2s ease;
+  color: #198754;
+}
+
 .bg-glass-light {
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.2);
