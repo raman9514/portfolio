@@ -167,6 +167,105 @@
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"
         ></script>
-      
+   
     </body>
+
+    
+<script>
+    const projects = [
+        {
+            title: "RSVP – Event Management Platform",
+            description:
+                "RSVP is a comprehensive event management platform that allows users to create events, manage guest lists, send invitations, and collect preferences for food, stay, and attendance—all in one place.",
+            techStack: ["Django", "PostgreSQL", "HTML", "CSS", "JavaScript", "Bootstrap 5"],
+            image: "img/projects/rsvp.jpg",
+            liveLink: "#", // Replace with your live URL
+            githubLink: "#"
+        },
+        {
+            title: "Crowdfunding Platform",
+            description:
+                "A robust crowdfunding platform that allows users to raise funds for diverse causes like education and medical emergencies. Features include campaign creation, payment integration (Razorpay), certificate generation, and deployment on AWS (EC2, S3).",
+            techStack: ["Django", "AWS EC2", "S3", "Razorpay", "HTML", "CSS", "Bootstrap 5"],
+            image: "img/projects/crowdfunding.jpg",
+            liveLink: "#",
+            githubLink: "#"
+        },
+        {
+            title: "DIP – Investment Platform",
+            description:
+                "DIP is a secure and user-friendly investment platform with features like wallet integration for fast transactions, referral-based rewards, encrypted data protection, and real-time investment tracking.",
+            techStack: ["Django", "HTML", "CSS", "JavaScript", "Bootstrap 5"],
+            image: "img/projects/dip.jpg",
+            liveLink: "#",
+            githubLink: "#"
+        },
+        {
+            title: "The Gourmet Fest",
+            description:
+                "A dynamic catering showcase platform connecting top caterers with clients. It features ratings, reviews, and strategic partnerships with EnY and Touchwood to offer credibility and wider reach.",
+            techStack: ["Django", "MySQL", "HTML", "CSS", "Bootstrap 5", "AWS EC2", "NGINX"],
+            image: "img/projects/tgf.jpg",
+            liveLink: "#",
+            githubLink: "#"
+        },
+        {
+            title: "Customized Protein",
+            description:
+                "An e-commerce platform that lets users build personalized protein blends based on their fitness goals. Features include seamless checkout, secure transactions, and an intuitive user interface.",
+            techStack: ["Django", "HTML", "CSS", "JavaScript", "Bootstrap 5"],
+            image: "img/projects/customized-protein.jpg",
+            liveLink: "#",
+            githubLink: "#"
+        },
+        {
+            title: "Shop4Cause – Social E-commerce",
+            description:
+                "Shop4Cause is a socially-driven e-commerce platform that connects conscious consumers with artisans from marginalized communities, promoting fair trade and sustainable livelihoods.",
+            techStack: ["Django", "HTML", "CSS", "Bootstrap 5", "JavaScript"],
+            image: "img/projects/shop4cause.jpg",
+            liveLink: "#",
+            githubLink: "#"
+        }
+    ];
+
+
+    function renderProjects() {
+        const container = document.getElementById("projectsContainer");
+        projects.forEach(project => {
+            const techBadges = project.techStack.map(tech =>
+                `<span class="tech-badge">${tech}</span>`
+            ).join("");
+
+            const cardHTML = `
+        <div class="card project-card w-100 custom-card bg-glass-dark mb-5">
+          <div class="row g-0">
+            <div class="order-2 order-md-1 col-md-8 p-4 pt-0 d-flex flex-column justify-content-between">
+              <div>
+                <h3 class="card-title text-white mt-4">${project.title}</h3>
+                <p class="card-text text-white">${project.description}</p>
+                <div class="mb-3">
+                  <strong class="text-white">Tech Stack:</strong><br>
+                  ${techBadges}
+                </div>
+              </div>
+              <div>
+                <a href="${project.liveLink}" target="_blank" class="btn btn-dark me-2">View Project</a>
+                <a href="${project.githubLink}" target="_blank" class="btn btn-dark">GitHub</a>
+              </div>
+            </div>
+            <div class="col-md-4 order-1 order-md-2">
+              <img src="${project.image}" class="img-fluid h-100 w-100 object-fit-cover" alt="${project.title}">
+            </div>
+          </div>
+        </div>
+      `;
+            container.innerHTML += cardHTML;
+        });
+    }
+
+    document.addEventListener("DOMContentLoaded", renderProjects);
+</script>
+
+
 </html>
